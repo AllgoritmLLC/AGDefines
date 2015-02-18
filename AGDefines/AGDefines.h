@@ -35,6 +35,7 @@
 
 #define AGFontSystem(aSize) [UIFont systemFontOfSize:aSize]
 #define AGFontSystemBold(aSize) [UIFont boldSystemFontOfSize:aSize]
+#define AGFontNamed(aName, aSize) [UIFont fontWithName:aName size:aSize]
 
 #define AGColor(aStr, aAlpha) { \
     NSParameterAssert(rgb && [rgb isKindOfClass:[NSString class]]); \
