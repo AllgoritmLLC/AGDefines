@@ -25,11 +25,7 @@
 #ifndef AGDefinesExamples_AGDefines_h
 #define AGDefinesExamples_AGDefines_h
 
-#ifdef DEBUG
-#define AGLog(format, ...) NSLog(format, ## __VA_ARGS__)
-#else
-#define AGLog(format, ...)
-#endif
+#define AGLog(format, ...) VBLog(format, ## __VA_ARGS__)
 
 #define AGLS(aStr) NSLocalizedString(aStr, @"")
 

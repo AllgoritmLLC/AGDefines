@@ -41,6 +41,7 @@
 		BAAB3A171A94DEB200F6E561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAAB3A181A94DEB200F6E561 /* AGDefinesExamplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGDefinesExamplesTests.m; sourceTree = "<group>"; };
 		BAAB3A231A94DF0200F6E561 /* AGDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGDefines.h; sourceTree = "<group>"; };
+		BAAB3A251A94E56C00F6E561 /* VBDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,9 +125,18 @@
 		BAAB3A221A94DEF600F6E561 /* AGDefines */ = {
 			isa = PBXGroup;
 			children = (
+				BAAB3A241A94E56C00F6E561 /* VBDefines */,
 				BAAB3A231A94DF0200F6E561 /* AGDefines.h */,
 			);
 			path = AGDefines;
+			sourceTree = "<group>";
+		};
+		BAAB3A241A94E56C00F6E561 /* VBDefines */ = {
+			isa = PBXGroup;
+			children = (
+				BAAB3A251A94E56C00F6E561 /* VBDefines.h */,
+			);
+			path = VBDefines;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
