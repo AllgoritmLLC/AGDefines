@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+#import "AGDefines.h"
+
+@interface ViewController () <UIAlertViewDelegate>
 
 @end
 
@@ -17,11 +19,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+//    AGShowAlertOK(@"AGShowAlertOK", @"msg");
+//    AGShowAlertOKDelegate(@"AGShowAlertOKDelegate", @"msg2", self);
+//    AGShowAlert(@"title", @"msg", self, @"cancel");
+    AGShowAlertOK(@"AGShowAlertOK", @"q");
+    AGShowAlertOKDelegate(@"AGShowAlertOKDelegate", @"w");
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - UIAlertViewDelegate
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    NSLog(@"1");
 }
 
 @end

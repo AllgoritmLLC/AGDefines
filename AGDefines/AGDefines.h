@@ -52,4 +52,17 @@
 
 #define AGIsIphone [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone
 
+#define AGShowAlertOK(title, msg) AGShowAlert(title, msg, nil, nil)
+#define AGShowAlertOKDelegate(title, msg) AGShowAlert(title, msg, self, nil)
+#define AGShowAlertOKCancel(title, msg) AGShowAlert(title, msg, self, @"Cancel")
+
+#define AGShowAlert(aTitle, aMsg, aDelegate, aCancelTitle) { \
+    [[[UIAlertView alloc] initWithTitle:aTitle \
+        message:aMsg \
+        delegate:aDelegate \
+        cancelButtonTitle:aCancelTitle \
+        otherButtonTitles:@"OK", nil] \
+        show]; \
+}
+
 #endif
