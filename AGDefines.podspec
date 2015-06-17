@@ -24,7 +24,7 @@ AGShowAlert... show uialerts using params.
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Allgoritm LLC" => "info@allgoritm.com" }
-s.source           = { :git => "https://github.com/AllgoritmLLC/AGDefines", :tag => "v#{s.version}" }
+s.source           = { :git => "https://github.com/AllgoritmLLC/AGDefines.git", :tag => "v#{s.version}" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
@@ -37,5 +37,5 @@ s.source           = { :git => "https://github.com/AllgoritmLLC/AGDefines", :tag
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'VBDefines', '~> 0.1'
 end
