@@ -26,15 +26,23 @@
 #define AGDefinesExamples_AGDefines_h
 
 #import "VBDefines.h"
-#define AGLog(format, ...) VBLog(format, ## __VA_ARGS__)
 
+/**
+ *  AGLS, AGLST are shortcuts for NSLocalizedString()
+ */
 #define AGLS(aStr) NSLocalizedString(aStr, @"")
 #define AGLST(aStr, aTable) NSLocalizedStringFromTable(aStr, aTable, @"")
 
+/**
+ *  AGFont... are shortcuts for UIFont methods
+ */
 #define AGFontSystem(aSize) [UIFont systemFontOfSize:aSize]
 #define AGFontSystemBold(aSize) [UIFont boldSystemFontOfSize:aSize]
 #define AGFontNamed(aName, aSize) [UIFont fontWithName:aName size:aSize]
 
+/**
+ *  AGColor... are shortcuts for UIFont methods
+ */
 #define AGColor(aStr, aAlpha) { \
     NSParameterAssert(rgb && [rgb isKindOfClass:[NSString class]]); \
     NSParameterAssert(rgb.length == 6); \
@@ -52,11 +60,18 @@
 
 #define kColorRed AGColor(@"ff0000", 1.0f)
 
+/**
+ *  AGIsIphone is a device-detection method
+ */
 #define AGIsIphone [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone
 
+/**
+ *  AGShowAlert... shows simple alert
+ */
 #define AGShowAlertOK(title, msg) AGShowAlert(title, msg, nil, nil)
 #define AGShowAlertOKDelegate(title, msg) AGShowAlert(title, msg, self, nil)
-#define AGShowAlertOKCancel(title, msg) AGShowAlert(title, msg, self, @"Cancel")
+#define AGShowAlertOKCancel(title, msg) AGShowAlert(title, msg, nil, @"Cancel")
+#define AGShowAlertOKDelegateCancel(title, msg) AGShowAlert(title, msg, self, nil)
 
 #define AGShowAlert(aTitle, aMsg, aDelegate, aCancelTitle) { \
     [[[UIAlertView alloc] initWithTitle:aTitle \
