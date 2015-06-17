@@ -25,9 +25,11 @@
 #ifndef AGDefinesExamples_AGDefines_h
 #define AGDefinesExamples_AGDefines_h
 
+#import "VBDefines.h"
 #define AGLog(format, ...) VBLog(format, ## __VA_ARGS__)
 
 #define AGLS(aStr) NSLocalizedString(aStr, @"")
+#define AGLST(aStr, aTable) NSLocalizedStringFromTable(aStr, aTable, @"")
 
 #define AGFontSystem(aSize) [UIFont systemFontOfSize:aSize]
 #define AGFontSystemBold(aSize) [UIFont boldSystemFontOfSize:aSize]
