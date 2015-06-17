@@ -1,0 +1,10 @@
+PODS:
+  - VBDefines (0.1.0)
+
+DEPENDENCIES:
+  - VBDefines (~> 0.1)
+
+SPEC CHECKSUMS:
+  VBDefines: c0c779ec30d7084aafc07e25d7e34a491096113a
+
+COCOAPODS: 0.37.0

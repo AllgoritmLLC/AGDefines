@@ -1,7 +1,7 @@
 //
 //    The MIT License (MIT)
 //
-//    Copyright (c) 2014 Valeriy Bezuglyy. All rights reserved.
+//    Copyright (c) 2015 Valeriy Bezuglyy.
 //
 //    Permission is hereby granted, free of charge, to any person obtaining a copy
 //    of this software and associated documentation files (the "Software"), to deal
@@ -26,6 +26,9 @@
 #define VBDefines_h
 
 #ifdef DEBUG
+/**
+ *  VBLog is a NSLog redefine. It adds some additional info (caller class, line) to log message. Stops logging in non-DEBUG builds.
+ */
 #define VBLog(str, ...) { \
     NSString* func = [NSString stringWithUTF8String:__func__]; \
     NSString* cmdOwner = [func stringByReplacingOccurrencesOfString:@".*\\[(.*)\\s.*" \
