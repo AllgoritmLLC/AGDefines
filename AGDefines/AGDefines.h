@@ -70,7 +70,6 @@
  */
 #define AGShowAlertOK(title, msg) AGShowAlert(title, msg, nil, nil)
 #define AGShowAlertOKDelegate(title, msg) AGShowAlert(title, msg, self, nil)
-#define AGShowAlertOKCancel(title, msg) AGShowAlert(title, msg, nil, @"Cancel")
 #define AGShowAlertOKDelegateCancel(title, msg) AGShowAlert(title, msg, self, nil)
 
 #define AGShowAlert(aTitle, aMsg, aDelegate, aCancelTitle) { \

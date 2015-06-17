@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		471C0A8897078379C6E72794 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F85B2A3B9A6B45751E0A6573 /* libPods.a */; };
+		BA1E37B11B31A6C20042919F /* AGDefines.podspec in Resources */ = {isa = PBXBuildFile; fileRef = BA1E37B01B31A6C20042919F /* AGDefines.podspec */; };
 		BAAB39FF1A94DEB100F6E561 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAB39FE1A94DEB100F6E561 /* main.m */; };
 		BAAB3A021A94DEB100F6E561 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAB3A011A94DEB100F6E561 /* AppDelegate.m */; };
 		BAAB3A051A94DEB100F6E561 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAB3A041A94DEB100F6E561 /* ViewController.m */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		6315C6B68E743DB2B6E1B721 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		926F15A9AEA24497E34CD219 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BA1E37B01B31A6C20042919F /* AGDefines.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AGDefines.podspec; sourceTree = "<group>"; };
 		BAAB39F91A94DEB100F6E561 /* AGDefinesExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AGDefinesExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAAB39FD1A94DEB100F6E561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAAB39FE1A94DEB100F6E561 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		BAAB39F01A94DEB100F6E561 = {
 			isa = PBXGroup;
 			children = (
+				BA1E37B01B31A6C20042919F /* AGDefines.podspec */,
 				BAAB3A221A94DEF600F6E561 /* AGDefines */,
 				BAAB39FB1A94DEB100F6E561 /* AGDefinesExamples */,
 				BAAB3A151A94DEB200F6E561 /* AGDefinesExamplesTests */,
@@ -238,6 +241,7 @@
 				BAAB3A081A94DEB100F6E561 /* Main.storyboard in Resources */,
 				BAAB3A0D1A94DEB100F6E561 /* LaunchScreen.xib in Resources */,
 				BAAB3A0A1A94DEB100F6E561 /* Images.xcassets in Resources */,
+				BA1E37B11B31A6C20042919F /* AGDefines.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
